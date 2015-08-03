@@ -1,5 +1,8 @@
 package the_third;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * 关于对象赋值
  * @author Mr_Wrong
@@ -83,6 +86,15 @@ public class Assignment{
 		
 		House h= new House();
 		h.f();
+		
+		//---------
+		String date_string = "1438342560"+"000";
+		Date date = new Date(Long.parseLong(date_string));
+		SimpleDateFormat sFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		sFormat.format(date);
+		
+		System.out.println(sFormat.format(date));
+		
 		
 	}
 }
