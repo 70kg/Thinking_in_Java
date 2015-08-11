@@ -22,6 +22,11 @@ public class BlankFinal {
 		new BlankFinal(20);
 
 		System.out.println(b1.j +"");
+		
+		String version = "1.0.1";
+		
+		System.out.println(version.replace(".", ""));//替换不用正则表达式  分割要
+		
 	}
 }
 class Popet{
