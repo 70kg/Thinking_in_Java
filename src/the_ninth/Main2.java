@@ -1,5 +1,9 @@
 package the_ninth;
-
+/**
+ * 适配器模式
+ * @author Mr_Wrong
+ *
+ */
 public class Main2 {
 	public static void main(String[] args) {
 		

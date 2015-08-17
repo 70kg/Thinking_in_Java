@@ -30,6 +30,8 @@ interface Canfly{
 }
 interface Canswim{void swim();}
 interface Canfight{void fight();}
+
+
 class ActionCharacter{
 	public  void fight() {
 		System.out.println("打架");
@@ -48,3 +50,22 @@ class Hero extends ActionCharacter implements Canfight,Canfly,Canswim{
 	}
 
 }
+
+
+
+
+
+interface Monster{
+	void menace();
+}
+interface DangerousMonster extends Monster{
+	void destory();
+}
+interface Lethal{
+	void kill();
+}
+
+interface Vampire extends Lethal,DangerousMonster{
+	void drinkblood();
+}
+
