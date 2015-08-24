@@ -2,13 +2,38 @@ package the_tenth;
 
 
 public class Main3 {
+
+
+
 	public static void main(String[] args) {
 		RelaMain main = new RelaMain();
 		Contents c = main.contents();
 		Destination d = main.destination("laal");
-		
+
 		RelaMain.PDestination pd = main.new PDestination("hahah");
-		//RelaMain.PContents pc = main.new PContents();访问不到  因为是private的
+		//RelaMain.PContents pc = main.new PContents();访问不到  因为是private的\
+		
+		Destination dd = destination("lal");
+		dd.readLabel();
+		ParcelDestination.AnotherLevel.f();
+	}
+
+
+	private static class ParcelDestination implements Destination{
+		private String label;
+		ParcelDestination(String whereto){
+			this.label = whereto;
+		}
+		public String readLabel() {
+			return label;
+		}
+		static class AnotherLevel{
+			public static void f(){};
+		}
+
+	}
+	public static Destination destination(String s){
+		return new ParcelDestination(s);
 	}
 
 }

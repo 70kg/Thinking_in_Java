@@ -26,12 +26,25 @@ public class Main {
 
 		System.out.println(HandleRate("17000")+"");
 		
+		int i =15;
+		Double d1 = Double.valueOf(i);
+		Double d2 = Double.valueOf(100);
+		Double d = d1/d2;
+		System.out.println(d);
+		
+		int a = 15;
+		int b = 100;
+		float c = (float)a / (float)b; 
+		System.out.println(c);
+		
 		
 	}
 	private static int HandleRate(String rate){
 		int i= Integer.parseInt(rate);
 		return i/1000;
 	}
+	
+	
 
 }
 /**

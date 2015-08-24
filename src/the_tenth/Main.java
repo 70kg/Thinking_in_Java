@@ -18,7 +18,7 @@ public class Main implements ClassInInterface{
 
 		TestClassInInterface classininterface = new TestClassInInterface();
 		classininterface.howby();//这样就可以访问接口的中的内部类
-		TestClassInInterface.main(args);
+		//TestClassInInterface.main(args);
 
 		Test test = new Test();
 		test.howby();
