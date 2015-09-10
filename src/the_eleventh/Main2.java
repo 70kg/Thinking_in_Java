@@ -1,8 +1,10 @@
 package the_eleventh;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
@@ -30,6 +32,15 @@ public class Main2 {
 			intset.add(rand.nextInt(10));
 		}
 		System.out.println(intset);
+		
+		
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("5", "one");
+		map.put("20", "two");
+		map.put("60", "three");
+
+		System.out.println(map.keySet());//但是都是乱序的  
+		
 
 	}
 }
