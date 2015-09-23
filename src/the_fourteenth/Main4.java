@@ -2,7 +2,11 @@ package the_fourteenth;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
+/**
+ * 方法的反射
+ * @author Mr_Wrong
+ *
+ */
 public class Main4 {
 	public static void main(String[] args) {
 		try {
