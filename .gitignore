@@ -1,0 +1,8 @@
+
+*.class
+
+.idea/
+
+.bin/
+
+bin/MyCallable.class
